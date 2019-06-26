@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: #e0e0e0;
+}
+
+.body {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: space-evenly;
+}
+
+.body > *{
+    flex: 400px 0 0;
+    margin: auto;
+}
+
+.card:first-child, .card:last-child{ 
+    visibility: hidden;
+}
+
+.flexContainer, .searchContainer {
+    display: flex;
+    padding: 2px;
+}
+
+.flexContainer, .searchContainer {
+    justify-content: space-between;
+}
+
+.card {
+    background: #fff;
+    border-radius: 2px;
+    padding: 8px;
+    position: relative;
+    height: 100%;
+}
+
+.card-1 {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-1:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.list *{
+    text-align: center;
+    flex: 120px 1 1;
+}
+
+h3{
+
+    margin: auto;
+}
+
+button {
+    float: left;
+    width: 20%;
+    padding: 12px;
+    background: #2196F3;
+    color: white;
+    font-size: 15px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+
+button:hover {
+    background: #0b7dda;
+}
+
+.iconButton{
+    max-height: 48px;
+    font-size: 1.5rem;
+}
+
+input {  
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 4px 10px;
+  border: 1px solid #ddd;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 0px;
+  font-size: 18px;
+}
+
+li:first-child, li:last-child{
+    background-color: #444;
+    color: #f8f8f8;
+    padding: 8px;
+}
+
+a {
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover:not(.header) {
+  background-color: #aaa;
+}
+
+ul li:not(:first-child, :last-child) {
+    margin-right: -5px;
+}
+
+.list:last-child span:last-child{
+    margin-right: -20px;
+}
+
+.noResults{
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.loadingBar{
+    width: 60px;
+    height: 60px;
+    fill: blue;
+    margin-left: 170px;
+    left: -30px;
+    margin-top: 10px
+}
